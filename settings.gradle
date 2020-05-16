@@ -1,0 +1,3 @@
+rootProject.name='CloserBaseAdapter'
+include ':app'
+include ':adapterlib'
