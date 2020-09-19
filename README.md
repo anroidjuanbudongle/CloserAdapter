@@ -1,6 +1,6 @@
 #集成方式
 
-    ` ` `
+ 
     allprojects {
        		repositories {
        			...
@@ -9,4 +9,3 @@
        	}
        	
       implementation 'com.github.hanchunyang159:CloserAdapter:1.0'
-    ` ` `
