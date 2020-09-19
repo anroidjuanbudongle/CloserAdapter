@@ -1,5 +1,6 @@
 
   **集成方式** 
+  
     allprojects {
        		repositories {
        			...
