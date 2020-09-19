@@ -1,8 +1,9 @@
 package com.hxz.adapterlib.builder;
 
+
 /**
  * @author Closer
- * @deprecated CloserBuilder
+ * @deprecated CloserBuilder  改写Kt
  */
-public interface CloserBuilder {
-}
+//public interface CloserBuilder {
+//}

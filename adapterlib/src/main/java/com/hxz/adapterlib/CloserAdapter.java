@@ -4,12 +4,12 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.hxz.adapterlib.base.BaseCloserAdapter;
-import com.hxz.adapterlib.builder.CloserFooterBuilder;
-import com.hxz.adapterlib.builder.CloserHeaderBuilder;
-import com.hxz.adapterlib.builder.CloserMultiItemViewBuilder;
+import com.hxz.adapterlib.kt.BaseCloserAdapter;
+import com.hxz.adapterlib.kt.CloserFooterBuilder;
+import com.hxz.adapterlib.kt.CloserHeaderBuilder;
+import com.hxz.adapterlib.kt.CloserMultiItemViewBuilder;
 import com.hxz.adapterlib.data.LoadDataListener;
-import com.hxz.adapterlib.data.LoadDataStatus;
+import com.hxz.adapterlib.kt.CloserViewHolder;
 import com.hxz.adapterlib.viewholder.CloserViewHolder;
 
 import java.util.ArrayList;

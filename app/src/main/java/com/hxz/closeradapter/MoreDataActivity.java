@@ -12,10 +12,9 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.hxz.adapterlib.CloserAdapter;
-import com.hxz.adapterlib.builder.CloserHeaderBuilder;
+import com.hxz.adapterlib.kt.CloserAdapter;
+import com.hxz.adapterlib.kt.CloserHeaderBuilder;
 import com.hxz.adapterlib.data.LoadDataListener;
-import com.hxz.adapterlib.data.LoadDataStatus;
 import com.hxz.adapterlib.view.SimpleFooterBuilder;
 import com.hxz.adapterlib.viewholder.CloserViewHolder;
 

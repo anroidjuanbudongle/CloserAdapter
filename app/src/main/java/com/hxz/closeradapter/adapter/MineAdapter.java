@@ -4,9 +4,9 @@ package com.hxz.closeradapter.adapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.hxz.adapterlib.CloserAdapter;
-import com.hxz.adapterlib.builder.CloserHeaderBuilder;
-import com.hxz.adapterlib.builder.CloserMultiItemViewBuilder;
+import com.hxz.adapterlib.kt.CloserAdapter;
+import com.hxz.adapterlib.kt.CloserHeaderBuilder;
+import com.hxz.adapterlib.kt.CloserMultiItemViewBuilder;
 import com.hxz.adapterlib.view.SimpleFooterBuilder;
 import com.hxz.adapterlib.viewholder.CloserViewHolder;
 import com.hxz.closeradapter.R;

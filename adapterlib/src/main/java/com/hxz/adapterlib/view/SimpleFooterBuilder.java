@@ -3,10 +3,12 @@ package com.hxz.adapterlib.view;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-
+import com.hxz.adapterlib.kt.CloserViewHolder;
 import com.hxz.adapterlib.R;
-import com.hxz.adapterlib.builder.CloserFooterBuilder;
-import com.hxz.adapterlib.viewholder.CloserViewHolder;
+import com.hxz.adapterlib.kt.CloserFooterBuilder;
+
+
+import org.jetbrains.annotations.NotNull;
 
 /**
  * @author Closer  自定义footer加载
@@ -33,27 +35,28 @@ public class SimpleFooterBuilder implements CloserFooterBuilder {
         return R.layout.view_simple_footer;
     }
 
+
     @Override
-    public void onNormal(CloserViewHolder mHolder) {
-        mHolder.<ProgressBar>getView(R.id.footer_progress).setVisibility(View.GONE);
-        mHolder.<TextView>getView(R.id.footer_msg).setText(this.normalMsg);
+    public void onNormalView(@NotNull CloserViewHolder holder) {
+        holder.<ProgressBar>getView(R.id.footer_progress).setVisibility(View.GONE);
+        holder.<TextView>getView(R.id.footer_msg).setText(this.normalMsg);
     }
 
     @Override
-    public void onLoading(CloserViewHolder mHolder) {
-        mHolder.<ProgressBar>getView(R.id.footer_progress).setVisibility(View.VISIBLE);
-        mHolder.<TextView>getView(R.id.footer_msg).setText(this.onLoadingMsg);
+    public void onLoadingView(@NotNull CloserViewHolder holder) {
+        holder.<ProgressBar>getView(R.id.footer_progress).setVisibility(View.VISIBLE);
+        holder.<TextView>getView(R.id.footer_msg).setText(this.onLoadingMsg);
     }
 
     @Override
-    public void onLoadingFailure(CloserViewHolder mHolder, String msg) {
-        mHolder.<ProgressBar>getView(R.id.footer_progress).setVisibility(View.GONE);
-        mHolder.<TextView>getView(R.id.footer_msg).setText(msg == null || msg.equals("") ? this.onLoadingFailureMsg : msg);
+    public void onLoadingFailView(@NotNull CloserViewHolder holder, @NotNull String msg) {
+        holder.<ProgressBar>getView(R.id.footer_progress).setVisibility(View.GONE);
+        holder.<TextView>getView(R.id.footer_msg).setText(msg == null || msg.equals("") ? this.onLoadingFailureMsg : msg);
     }
 
     @Override
-    public void onNoMoreData(CloserViewHolder mHolder) {
-        mHolder.<ProgressBar>getView(R.id.footer_progress).setVisibility(View.GONE);
-        mHolder.<TextView>getView(R.id.footer_msg).setText(this.onNoMoreDataMsg);
+    public void onNoMoreDataView(@NotNull CloserViewHolder holder) {
+        holder.<ProgressBar>getView(R.id.footer_progress).setVisibility(View.GONE);
+        holder.<TextView>getView(R.id.footer_msg).setText(this.onNoMoreDataMsg);
     }
 }
